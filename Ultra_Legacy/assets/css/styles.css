@@ -1,0 +1,193 @@
+@import url('https://use.fontawesome.com/releases/v6.5.1/css/all.css');
+body {
+    background: linear-gradient(50deg, #252525, #440072);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #5E4B8A; /* Cor de fundo roxa */
+    padding: 5px; /* Espaçamento superior e inferior */
+}
+
+.logo h1 {
+    color: #FFD700; /* Cor dourada para o título */
+    font-family: 'Arial Black', sans-serif; /* Fonte em negrito */
+    margin: 0; /* Remove margens */
+}
+
+.logo p {
+    color: #FFFFFF; /* Texto branco para o subtítulo */
+    font-family: 'Cursive', sans-serif; /* Fonte cursiva */
+}
+
+/* Estilo da barra de navegação */
+.navbar-nav .nav-link {
+    color: #FFFFFF; /* Texto branco para os links */
+    font-weight: bold; /* Negrito */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700; /* Cor dourada ao passar o mouse */
+}
+
+/* Estilo da seção hero */
+.hero {
+    background-color: #3E2A5B; /* Cor de fundo mais escura */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 50px 0; /* Espaçamento superior e inferior */
+}
+
+.hero h2 {
+    font-size: 2.5em; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+.hero p {
+    font-size: 1.2em; /* Tamanho da fonte do parágrafo */
+}
+
+/* Estilo do botão */
+.btn {
+    background-color: #FFD700; /* Cor dourada */
+    color: #5E4B8A; /* Texto roxo */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn:hover {
+    background-color: #FFC107; /* Cor dourada mais clara ao passar o mouse */
+}
+
+/* Estilo da seção de serviços */
+section {
+    padding: 40px 0; /* Espaçamento superior e inferior */
+    background-color: #FFFFFF; /* Fundo branco */
+    text-align: center; /* Centraliza o texto */
+}
+
+section h2 {
+    font-size: 2em; /* Tamanho da fonte do título */
+    color: #5E4B8A; /* Cor roxa para o título */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+.servicos-container {
+    display: flex; /* Flexbox para layout */
+    justify-content: center; /* Centraliza os itens */
+    flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+.servico {
+    background-color: #F0F0F0; /* Fundo cinza claro */
+    border: 1px solid #5E4B8A; /* Borda roxa */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin: 10px; /* Margem entre os serviços */
+    width: 300px; /* Largura fixa */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.servico:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.servico h3 {
+    color: #5E4B8A; /* Cor roxa para o título do serviço */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+.servico p {
+    color: #333333; /* Texto cinza escuro */
+}
+
+/* Estilo do footer */
+.footer {
+    background-color: #18191f; /* Cor de fundo do footer */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento superior e inferior */
+}
+
+.footer ul {
+    display: ; /* Exibe os ícones em linha */
+    justify-content: center; /* Centraliza os ícones */
+    gap: 20px; /* Espaçamento entre os ícones */
+    padding: 0; /* Remove padding */
+    list-style: none; /* Remove marcadores da lista */
+}
+
+.footer button {
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #FFD700; /* Cor dourada */
+    color: #5E4B8A; /* Texto roxo */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor de ponteiro */
+    margin-left: 5px; /* Margem à esquerda do botão */
+}
+
+/* Estilo dos botões de redes Sociais*/
+
+.social-icons {
+    display: flex; /* Exibe os ícones em linha */
+    gap: 20px; /* Espaçamento entre os ícones */
+}
+
+.social-icons li {
+    list-style: none; /* Remove marcadores da lista */
+    --color: #ff0050; /* Cor do 1 ícone */
+}
+
+.social-icons a {
+    width: 40px; /* Largura do ícone */
+    height: 40px; /* Altura do ícone */
+    background-color: #18191f; /* Cor de fundo */
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow:
+        -2px -2px 3px #ffffff0d,
+        3px 3px 3px #00000033;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-decoration: none; /* Remove sublinhado */
+    transition: all .2s ease-in-out; /* Transição suave */
+}
+
+.social-icons .fa-brands {
+    font-size: 20px; /* Tamanho da fonte */
+    color: #555; /* Cor do ícone */
+}
+
+.social-icons a:hover .fa-brands {
+    color: var(--color); /* Cor do ícone ao passar o mouse */
+    text-shadow: 0 0 30px var(--color); /* Sombra ao passar o mouse */
+}
+
+.social-icons li:nth-child(2) {
+    --color: #1c7dd5; /* Cor do 2 ícone */
+}
+
+.social-icons li:nth-child(3) {
+    --color: #4cd137; /* Cor do 3 ícone */
+}
+
+/* Estilo do Scroll */
+::-webkit-scrollbar {
+    width: 18px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #ffd900; /* Cor de fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5e4b8a; /* Cor do thumb da barra de rolagem */
+    border-radius: 7px; /* Borda arredondada */
+    border: 3px solid #ffd900; /* Borda dourada */
+}
